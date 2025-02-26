@@ -1,35 +1,50 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-	  <div class="form-container">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <h1>Login Form</h1>
-    <form id="loginForm">
-      <!-- Add labels with 'for' attributes matching input ids -->
-      <label for="username">Username:</label>
-      <input type="text" id="username" placeholder="Username" required>
-
-      <label for="password">Password:</label>
-      <input type="password" id="password" placeholder="Password" required>
-
+    <form>
+      <!-- Label and input for Username -->
       <div>
-        <input type="checkbox" id="checkbox">
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Username"
+        />
+      </div>
+      <br />
+      <!-- Label and input for Password -->
+      <div>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+        />
+      </div>
+      <br />
+      <!-- Remember Me checkbox with updated label text -->
+      <div>
+        <input type="checkbox" id="checkbox" name="checkbox" />
         <label for="checkbox">Remember me:</label>
       </div>
-
-      <input type="submit" id="submit" value="Submit">
+      <br />
+      <!-- Submit button -->
+      <div>
+        <input type="submit" id="submit" value="Submit" />
+      </div>
     </form>
-    <button id="existing">Login as existing user</button>
-  </div>
-    <script type="text/javascript" src="./script.js">
-</script>
+    <br />
+    <!-- Existing User Login Button (hidden by default) -->
+    <button id="existing" style="display: none;">Login as existing user</button>
 
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>
